@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 330" width="1000" height="330" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#57606a"/>
+    </marker>
+    <symbol id="car" viewBox="0 0 80 40">
+      <rect x="4"  y="0"  width="12" height="11" rx="3" fill="#24292f"/>
+      <rect x="4"  y="29" width="12" height="11" rx="3" fill="#24292f"/>
+      <rect x="60" y="0"  width="12" height="11" rx="3" fill="#24292f"/>
+      <rect x="60" y="29" width="12" height="11" rx="3" fill="#24292f"/>
+      <rect x="10" y="5"  width="60" height="30" rx="8" fill="currentColor"/>
+      <rect x="44" y="11" width="14" height="18" rx="3" fill="#ffffff" opacity="0.55"/>
+    </symbol>
+  </defs>
+  <style>
+    .ct   { font-size: 16px; font-weight: 600; fill: #ffffff; text-anchor: middle; }
+    .b    { font-size: 13.5px; fill: #24292f; text-anchor: middle; }
+    .a    { font-size: 12.5px; fill: #57606a; text-anchor: middle; }
+    .ar   { fill: none; stroke: #57606a; stroke-width: 2; marker-end: url(#ah); }
+    .card { fill: #ffffff; stroke: #d0d7de; stroke-width: 1.5; }
+  </style>
+
+  <rect width="1000" height="330" rx="16" fill="#ffffff" stroke="#d0d7de"/>
+
+  <!-- power on -->
+  <path d="M165 30 V68" class="ar"/>
+  <text x="178" y="46" class="a" style="text-anchor:start">power on</text>
+
+  <!-- card 1: safe stop -->
+  <rect x="40" y="70" width="250" height="200" rx="10" class="card"/>
+  <path d="M50 70 H280 Q290 70 290 80 V106 H40 V80 Q40 70 50 70 Z" fill="#cf222e"/>
+  <text x="165" y="94" class="ct">Safe stop</text>
+  <use href="#car" x="117" y="118" width="96" height="48" color="#cf222e"/>
+  <circle cx="245" cy="132" r="11" fill="none" stroke="#cf222e" stroke-width="2.5"/>
+  <line x1="237" y1="124" x2="253" y2="140" stroke="#cf222e" stroke-width="2.5" stroke-linecap="round"/>
+  <text x="165" y="192" class="b">Just powered on, or the</text>
+  <text x="165" y="212" class="b">radio signal is gone.</text>
+  <text x="165" y="232" class="b">Motor braked,</text>
+  <text x="165" y="252" class="b">wheels straight.</text>
+
+  <!-- radio connects -->
+  <path d="M290 170 H373" class="ar"/>
+  <text x="332" y="145" class="a">radio</text>
+  <text x="332" y="160" class="a">connects</text>
+
+  <!-- card 2: steer only -->
+  <rect x="375" y="70" width="250" height="200" rx="10" class="card"/>
+  <path d="M385 70 H615 Q625 70 625 80 V106 H375 V80 Q375 70 385 70 Z" fill="#bf8700"/>
+  <text x="500" y="94" class="ct">Steer only</text>
+  <use href="#car" x="452" y="118" width="96" height="48" color="#bf8700"/>
+  <path d="M558 122 Q 578 142 558 162" class="ar" style="stroke:#bf8700"/>
+  <text x="500" y="192" class="b">Radio connected,</text>
+  <text x="500" y="212" class="b">arm switch off.</text>
+  <text x="500" y="232" class="b">You can steer.</text>
+  <text x="500" y="252" class="b">The motor stays off.</text>
+
+  <!-- arm -->
+  <path d="M625 170 H708" class="ar"/>
+  <text x="667" y="145" class="a">switch on,</text>
+  <text x="667" y="160" class="a">gas at zero</text>
+
+  <!-- card 3: drive -->
+  <rect x="710" y="70" width="250" height="200" rx="10" class="card"/>
+  <path d="M720 70 H950 Q960 70 960 80 V106 H710 V80 Q710 70 720 70 Z" fill="#1a7f37"/>
+  <text x="835" y="94" class="ct">Drive</text>
+  <use href="#car" x="787" y="118" width="96" height="48" color="#1a7f37"/>
+  <g stroke="#1a7f37" stroke-width="2.5" stroke-linecap="round">
+    <line x1="756" y1="130" x2="776" y2="130"/>
+    <line x1="750" y1="142" x2="776" y2="142"/>
+    <line x1="756" y1="154" x2="776" y2="154"/>
+  </g>
+  <text x="835" y="192" class="b">Arm switch on, gas at zero.</text>
+  <text x="835" y="212" class="b">Pick forward or reverse</text>
+  <text x="835" y="232" class="b">and go.</text>
+
+  <!-- back to safe stop -->
+  <path d="M835 270 V300 H165 V272" class="ar"/>
+  <text x="500" y="293" class="a">signal lost, or arm switch off: straight back to Safe stop</text>
+</svg>
