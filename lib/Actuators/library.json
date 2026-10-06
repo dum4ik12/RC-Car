@@ -1,0 +1,10 @@
+{
+  "name": "Actuators",
+  "version": "1.2.0",
+  "description": "Zero-CPU ESP32 actuator drivers (servo/ESC, BTS7960 H-bridge) on the LEDC peripheral and its hardware fade engine",
+  "frameworks": "arduino",
+  "platforms": "espressif32",
+  "build": {
+    "flags": ["-Wall", "-Wextra"]
+  }
+}

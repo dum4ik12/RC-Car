@@ -1,0 +1,8 @@
+{
+  "name": "CrsfProtocol",
+  "version": "1.0.0",
+  "description": "CRSF (TBS Crossfire / ExpressLRS) serial protocol: CRC-8/DVB-S2, byte-fed frame parser, RC channel packing and link statistics. Pure C++17, no hardware dependencies, host-testable",
+  "build": {
+    "flags": ["-Wall", "-Wextra"]
+  }
+}

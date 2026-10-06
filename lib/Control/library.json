@@ -1,0 +1,8 @@
+{
+  "name": "Control",
+  "version": "1.0.0",
+  "description": "RC car drive logic: arming, failsafe and stick-to-actuator mapping. Pure C++17, no hardware dependencies, host-testable",
+  "build": {
+    "flags": ["-Wall", "-Wextra"]
+  }
+}

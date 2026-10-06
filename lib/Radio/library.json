@@ -1,0 +1,10 @@
+{
+  "name": "Radio",
+  "version": "1.0.0",
+  "description": "ExpressLRS / CRSF receiver on an ESP32 UART: IDF UART driver with event queue, event-driven rx task, frame mailbox and telemetry hook",
+  "frameworks": "arduino",
+  "platforms": "espressif32",
+  "build": {
+    "flags": ["-Wall", "-Wextra"]
+  }
+}
